@@ -98,6 +98,22 @@ elif (user == "rock" and computer == "scissors") or \\
 else:
     print("You lose!")`,
       description: 'Play Rock, Paper, Scissors against the computer'
+    },
+    {
+      id: 4,
+      name: '▶️ YouTube Video Downloader',
+      code: `import yt_dlp
+
+url = "https://youtu.be/3TYABnOSgCE?si=uEuPmAQxCOTR3N9V"
+
+ydl_opts = {
+    'format': 'bestvideo+bestaudio/best',
+    'outtmpl': '%(title)s.%(ext)s'
+}
+
+with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    ydl.download([url])`,
+      description: 'Download YouTube videos using Python'
     }
   ]
 
